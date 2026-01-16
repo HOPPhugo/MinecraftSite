@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: MaPolicePersos;
-    src: url(MinecraftRegular-Bmg3.otf);
+    src: url(./../Font/MinecraftRegular-Bmg3.otf);
 }
 body {
     font-family:MaPolicePersos;
