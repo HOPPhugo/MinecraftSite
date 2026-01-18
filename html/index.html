@@ -14,6 +14,8 @@
                 align-items: center;
                 flex-direction: column;
                 gap: 1%;
+                color: #BEEFFF ;
+                background-color:#102A43 ;
             }
             td {
                 
@@ -29,15 +31,52 @@
             
             a{
                 text-decoration: none;
+                color:  #102A43;
             }
             .ListPage {
                 height: max-content;
                 width: 15%;
-                background-color: whitesmoke;
-                border-radius: 5%;
+                background-color: #BEEFFF;
+                border-radius: 12px;
+                border: solid;
+                box-shadow: 0 4px 12px rgba(30, 42, 67, 0.3);
             }
             h1{
                 width: max-content;
+            }
+            footer {
+                display: flex;
+                flex-direction: row;
+                position:absolute;
+                bottom:0;
+                margin-bottom: 10px;
+            }
+            .footer {
+                display: flex;
+                flex-direction: row;
+                max-width: 50%;
+                background-color: #BEEFFF;
+                color: #102A43;
+                border-radius: 12px;
+                border: solid;
+                box-shadow: 0 4px 12px rgba(30, 42, 67, 0.3);
+                font-size: 15px;
+            }
+            p {
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-bottom: 10px;
+            }
+            .Line {
+                text-align: center;
+            }
+            .Left-Line {
+                
+                border-left: solid;
+                border-left-color: yellow;
+            }
+            .TextFooter {
+                
             }
         </style>
     </head>
@@ -62,64 +101,84 @@
                 </li>
             </ul>
         </div>
-        <h2>Les joueurs Minecraft les plus connu    </h2>
+        <h2>Les joueurs Minecraft les plus connus :   </h2>
         <table>
             <tr>
                 <td>
-                    Nom de montagne
+                    Nom
                 </td>
                 <td>
-                    Taille
+                    Spécialié
                 </td>
                 <td>
-                    Lieu ❗
+                    Popularité
                 </td>
                 <td>
-                    Famous
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Mont-évereste
-                </td>
-                <td>
-                    8000 GO
-                </td>
-                <td>
-                   Japan 🉐
-                </td>
-                <td>
-                    Très connu mais ceux qui s'essaient meurent
+                    Réalisations
                 </td>
             </tr>
             <tr>
                 <td>
-                    Dents de la mère 🦈🦈🦈
+                    Dream
                 </td>
                 <td>
-                    100M
+                    <i>Speedrun<sup>1</sup></i>, <i>Manhunt<sup>2</sup></i>
                 </td>
                 <td>
-                    Dans de la flotte, demande pas plus j'en sais rien
+                   <a href="https://www.youtube.com/@dream">34M d'abonnés YouTube (2026)</a> 
                 </td>
                 <td>
-                    Connu mais pas pour les bonnes raisons
+                    Créateur de la série “Minecraft Manhunt”, leader de la communauté Dream SMP
                 </td>
             </tr>
             <tr>
                 <td>
-                    bien vennu chez les chtis
+                    Technoblade
                 </td>
                 <td>
-                    environ 1.4 mètres
+                    <i>PvP<sup>3</sup></i>, compétitions
                 </td>
                 <td>
-                    France, ces chauffares
+                    <a href="https://www.youtube.com/@Technoblade"></a> 21M d'abonnés YouTube (2026)
                 </td>
                 <td>
-                    pas connu mais drôle...
+                    Légende du PvP Minecraft, sortit grand gagnant de Minecraft Monday
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   GeorgeNotFound
+                </td>
+                <td>
+                    Survie, challenges, collaborations
+                </td>
+                <td>
+                   <a href="https://www.youtube.com/GeorgeNotFound">10M d'abonnés YouTube (2026)</a> 
+                </td>
+                <td>
+                    Vidéos collaboratives avec Dream, défis amusants, membre du Dream SMP
                 </td>
             </tr>
         </table>
+        
     </body>
+    <footer>
+        
+        <div class="footer">
+            <div class="Left-Line">
+                <h1></h1>
+            </div>
+            <div class="TextFooter">
+                <p><sup>1</sup><strong>Speedrun</strong> : Le Speedrun est le but de finir le jeu ou de faire une chause spécifique le plus raoidement possible, <br>le but/objectif varie selon la catégorie choisie.Certaines catégories demandes de finir le jeu le plus rapidement <br>possible et certaines plus niche demandes de récupérer un certain bloc/item.</p>
+                <p class="Line">--------------------------------------------------------------------------------------------------------------------</p>
+                <p><sup>2</sup><strong>Manhunt</strong> : Un Manhunt est une variante du speedrun de Minecraft. Plutôt que d’essayer de battre le chronomètre, les joueurs deviennent soit coureurs, soit chasseurs ; Les coureurs doivent survivre et battre le jeu tandis qu’un nombre variable de chasseurs traquent le coureur et tentent de le tuer. La première vidéo connue de Minecraft Manhunt s’intitule « Minecraft Manhunt #1 », publiée par la chaîne YouTube Dastro le 26 septembre 2014. [1] Depuis, des créateurs de contenu comme Dream ont fait exploser et popularisé cette idée. Il existe d’autres variantes de ce type : plusieurs joueurs poursuivant le coureur, des objets tombés au hasard, etc. Cette page vous donnera quelques conseils sur la façon de préparer la chasse à l’homme, comment survivre en tant que coureur, et comment tuer le coureur en tant que chasseur.</p>
+                <p class="Line">--------------------------------------------------------------------------------------------------------------------</p>
+                <p><sup>3</sup><strong>PvP</strong> : Le PvP est un acronyme de l’expression anglaise « Player versus Player ». Si vous connectez toutes vos connaissances de 6eme, vous comprendrez que cela signifie « joueur contre joueur » c’est-à-dire lorsque le joueur lutte contre d’autres joueurs.</p>
+            </div>
+            
+            
+        </div>
+        
+
+    </footer>
 </html>
