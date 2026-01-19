@@ -6,191 +6,140 @@
         <meta charset="ISO-8859-1">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Page d'accueil pour le premier exercice html">
+
         <style>
-            body{
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                background-color: transparent;
+            body {
+                margin: 0;
             }
-            html {
-                
-                background-image: url("./../Images/wp2890582-minecraft-background-free.png");
-                background-repeat:no-repeat;
-                background-size:cover;
-                background-attachment: fixed;
-                background-color:#835432 ;
-            }
-            .leftSide{
+            .body {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
             }
-            .cube1 {
-                background-color: black;
-                width: 100%;
+            header{
+                display: flex;
+                flex-direction: row;
             }
-            #image1{
+            #titre {
+                margin-top: 0;
+                padding: 20px;
+                text-align: center;
+                width: fit-content;
+                margin-left: 34%;
+                margin-right: 19%;
+                background-color: #BEEFFF;
+                color: #102A43;
+                height: fit-content;
+                border-bottom-left-radius: 30px;
+                border-bottom-right-radius: 30px;
+            }
+            .ListLiens{
+                background-color:#BEEFFF;
+                color: #102A43;
+                padding-left: 35px;
+                padding-right: 20px;
+                padding-bottom: 35px;
+                width: fit-content;
+                margin-left: auto;
+                border-bottom-left-radius: 100px;
+            }
+            .titreLiens {
+                text-align: center;
+            }
+            .Liens {
+                display: flex;
+                flex-direction: column;
+            }
+            a {
+                color: #102A43;
+            }
+            .Mobs {
+                font-size: 30px;
+                background-color: #BEEFFF;
+                display: flex;
+                flex-direction: column;
                 width: 25%;
+                padding: 20px;
                 border-radius: 30px;
             }
-            .image2{
-                height: 25%;
-                width: 75%;
+            .pasLiens {
+                
             }
-            .p1 {
-                width: 30%;
-            }
-            #Titre {
+            .Row1, .Row2, .Row3, .Row4 {
                 display: flex;
-                justify-self: center;
-                background-color: #BEEFFF;
-                width: max-content;
-                border-radius: 50%;
-                color:#102A43;
+                justify-content: space-between;
             }
-            h3 {
-                border-left: solid;
-                border-color: greenyellow;
-                display: flex;
-                justify-content: center;
-            }
-            .Images2 {
-                display: flex;
-                flex-direction: row;
-            }
-            a{
-                color: green;
-            }
-            #Zombie {
-                width: 20%;
-            }
-            li{
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-            }
-            #Squelette {
-                width: 10%;
-            }
-            #Araignée {
-                width: 20%;
-            }
-            #Creeper {
-                width: 20%;
-            }
-            #drowned {
-                width: 40%;
-            }
-            #Illager {
-                width: 40%;
-            }
-            #Uglin {
-                width: 15%;
-            }
-            .Row1, .Row2 {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                margin-left: 20px;
-            }
-            #Diamant, #Fer, #Netherit, #Charbon {
-                width: 15%;
-                height: 15%;
-            }
-            #Diamant {
-                width: 10%;
-            }
-            #Netherit {
-                width: 15%;
-
-            }
-            #OresTitle {
+            .Link {
+                border-top: solid;
+                border-color: #102A43;
                 text-align: center;
             }
         </style>
+
     </head>
-    <body>
-            <h1 id="Titre">
-                ✨Page d'accueil✨
-            </h1>
-            <p class="p1">
-                Le site est principalement sur minecraft et sa variété de mobs, mais aussi sur les minerais les plus utiles selon une <a href="https://tiermaker.com/categories/minecraft/minecraft-ores-as-of-116-887447">tier list </a>
-            </p>
-            <img id="image1" src="./../Images/hd-minecraft-logo-3nehf0ctjgk3d0zp.jpg">
-            <h2 >
-                🦴 Mobs Minecraft Méchants 🧟‍♂️
-            </h2>
-            <div class="Mobs">
-                <ul>
-                    <li>
-                        Zombie
-                        <img id="Zombie" src="./../Images/zombie.png">
-                    
-                    </li>
-                    <br>
-                    <li>
-                        Squelette
-                        <img id="Squelette" src="./../Images/squelette.webp">
 
-                    </li>
-                    <li>
-                        Araignée
-                        <img id="Araignée" src="./../Images/araignée.webp">
-                        
-                    </li>
-                    <li>
-                        Creeper
-                        <img id="Creeper" src="./../Images/creeper.png">
-                        
-                    </li>
-                    <li>
-                        Zombies Noyés
-                        <img id="drowned" src="./../Images/drowned.png">
-                        
-                    </li>
-                    <li>
-                        Illagers
-                        <img id="Illager" src="./../Images/Illager.png">
-                        
-                    </li>
-                    <li>
-                        Uglin
-                        <img id="Uglin" src="./../Images/Uglin.png">
-                        
-                    </li>
-                    <li>
-                    <a href="https://minecraft.fr/creatures/#Creatures-hostiles">Et bien plus...</a> 
-                        
-                    </li>
-                </ul>
+    <header>
+        <h1 id="titre">Bienvenue dans le Monde Déjanté de Minecraft !</h1>
+        <div class="ListLiens">
+            <div class="titreLiens">
+                <h3>Autres pages :</h3>
             </div>
-            <h2 id="OresTitle">&nbsp;⛏ Minecraft Ores top 4 ⛏</h3>
-           
-                <div class="AllOres">
-                    <div class="Row1">
 
-                        <p>
-                            Diamant
-                        </p>
-                        <img id="Diamant" src="./../Images/pngegg.png">
-                        <p id="IronTxt">
-                            Fer
-                        </p>
-                        <img id="Fer" src="./../Images/0893944aba45ab7279c850c0dff1dcbc.png">
-                    </div>
-                    <div class="Row2">
-                        <p>Netherit</p> 
-                        <img id="Netherit" src="./../Images/276667dccdd8e42.png">
-                        <p>
-                            Charbon
-                        </p>
-                        <img id="Charbon" src="./../Images/637072293207114106.png" >
+            <div class="Liens">
+                <a href="index.html">- Top joueurs</a>
+                <a href="contact.html">- Contact / Boutique</a>
+                <a href="mentions-legales.html">- Mentions légales</a>
+                <a href="page-detail-[1-2-3].html">- jsp encore en faire quoi</a>
+            </div>
+        </div>
+    </header>
 
-                    </div>
+    <body>
+        <div class="body">
+            <h2>⚠️ List de mobs méchants ⚠️ :</h2>
+            <div class="Mobs">
+                <div class="Row1">
+                    <a href="Zombie">Zombie</a>
+                    <a href="Drowned">Drowned</a>
+                </div>
+                <div class="Row2">
+                    <a href="Creeper">Creeper</a>
+                    <a href="CreeperCharge">Creeper chargé</a>
 
                 </div>
+                <div class="Row3">
+                    <a href="Squelette">Squelette</a>
+                    <a href="Vagabond">Vagabond</a>
+
+                </div>
+                <div class="Row4">
+                    <a href="Uglin">Uglin</a>
+                    <a href="Piglin">Piglin</a>
+                    
+                </div>
+                
+                <div class="Link">
+                    <a href="https://www.minecraft-france.fr/guide-minecraft/guide-toutes-les-creatures-mobs-de-minecraft/#Les_creatures_hostiles">Et bien plus...</a>
+                    
+                </div>
+            </div>
+                
+
+            <h2>⛏️ Top 4 Minerais ⛏️ :</h2>
+            <div class="Mobs">
+                <div class="Row1">
+                    <a href="Diamant">Diamant</a>
+                    <a href="Fer">Fer</a>
+                </div>
+                <div class="Row1">
+                    <a href="Netherit">Netherit</a>
+                    <a href="Charbon">Charbon</a>
+                </div>
+                <div class="Link">
+                    <a href="Tier List de référence">Référence...</a>
+                </div>
+                
+            </div>
         </div>
         
     </body>
