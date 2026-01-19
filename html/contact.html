@@ -20,15 +20,27 @@
             height: 100%;
             margin-left: 5px;
             max-height: 326px;
+            margin-top: 5px;
         }
         #Comm {
             margin-left: 10px;
+            margin-top: 10px;
         }
         input, textarea, option, select {
             background-color: #BEEFFF;
             color: #102A43;
         }
-
+        a {
+            color: #BEEFFF;
+        }
+        #payement {
+            border: dotted;
+            border-color: white;
+            margin-left: 10px;
+        }
+        #Discord {
+            margin-right: 24px;
+        }
         </style>
     </head>
     <body>
@@ -37,48 +49,430 @@
         </h1>
         <form action="Submit succed.html" >
             <div class="Commande">
-                <fieldset class="fieldset">
-                <legend>Que voulez vous acheter ?</legend>
-                <label for="name">Nom : </label>
-                <input type="text" id="name" name="name" required><br><br>
-                <label for="name">Prénom : </label>
-                <input type="text" id="name" name="name" required><br><br>
-                <label for="name">Adresse : </label>
-                <input type="text" id="name" name="name" required><br><br>
-                <label for="name">Lieu : </label>
-                <input type="text" id="name" name="name" required><br><br>
-                <label for="name">NPA : </label>
-                <input type="number" id="name" name="name" required><br><br>
-                <label for="name">Cookies</label>
-                <input type="checkbox" name="name"><br>
-                <label for="name">Bout de mont everest</label>
-                <input type="checkbox" name="name"><br>
-                <label for="name">Cheveux de arthure himbert</label>
-                <input type="checkbox" name="name"><br>
-                <label for="name">2eme cookie</label>
-                <input type="checkbox" name="name"><br>
-                <label for="name">Nombre de cookies</label>
-                <select name="Nombre de cookie">
+                <div class="AddresseCommande">
+                    <fieldset class="fieldset">
+                        <legend>Ton compte</legend>
+                        <label for="name">Pseudo : </label>
+                        <input type="text" id="name" name="name" required><br><br>
+                        <label id="Discord" for="name">Discord : </label>
+                        <input type="text" id="name" name="name" required><br><br>
+                        <label for="name">Ip : </label>
+                        <input type="number" id="name" name="name" required><br><br>
+                        <label for="name">MDP : </label>
+                        <input type="number" id="name" name="name" required><br><br>
 
-                    <option>--Aucun--</option>
-                    <option>1 </option>
-                    <option>2</option>
-                    <option>10</option>
 
-                </select><br>
-            </fieldset>
+                    </fieldset>
+                    <fieldset class="fieldset">
+                        <legend>Que voulez vous acheter ?</legend>
+                        <label for="name">Item</label>
+                        <select name="Nombre de cookie">
+                            <option value="">-- Aucun --</option>
+                            <optgroup label="A">
+                                <option>Acajou (bûche)</option>
+                                <option>Acajou (planche)</option>
+                                <option>Acajou (porte)</option>
+                                <option>Acajou (trappe)</option>
+                                <option>Acajou (escalier)</option>
+                                <option>Acajou (dalle)</option>
+                                <option>Acajou (clôture)</option>
+                                <option>Acajou (portillon)</option>
+                                <option>Acajou (panneau)</option>
+                                <option>Acajou (pancarte suspendue)</option>
+                                <option>Améthyste (éclat)</option>
+                                <option>Améthyste (bloc)</option>
+                                <option>Améthyste bourgeonnante</option>
+                                <option>Arc</option>
+                                <option>Arbalète</option>
+                                <option>Armure en cuir</option>
+                                <option>Armure en fer</option>
+                                <option>Armure en or</option>
+                                <option>Armure en diamant</option>
+                                <option>Armure en netherite</option>
+                            </optgroup>
+
+                            <optgroup label="B">
+                                <option>Bambou</option>
+                                <option>Bambou (planche)</option>
+                                <option>Bambou (porte)</option>
+                                <option>Bambou (trappe)</option>
+                                <option>Bambou (escalier)</option>
+                                <option>Bambou (dalle)</option>
+                                <option>Bambou (clôture)</option>
+                                <option>Bambou (portillon)</option>
+                                <option>Bambou (panneau)</option>
+                                <option>Bambou (pancarte suspendue)</option>
+                                <option>Bannière</option>
+                                <option>Baril</option>
+                                <option>Barrière</option>
+                                <option>Bateau</option>
+                                <option>Bateau avec coffre</option>
+                                <option>Bêche en bois</option>
+                                <option>Bêche en pierre</option>
+                                <option>Bêche en fer</option>
+                                <option>Bêche en or</option>
+                                <option>Bêche en diamant</option>
+                                <option>Bêche en netherite</option>
+                                <option>Blé</option>
+                                <option>Bloc d’améthyste</option>
+                                <option>Bloc de charbon</option>
+                                <option>Bloc de cuivre</option>
+                                <option>Bloc de diamant</option>
+                                <option>Bloc de fer</option>
+                                <option>Bloc de lapis-lazuli</option>
+                                <option>Bloc de netherite</option>
+                                <option>Bloc de redstone</option>
+                                <option>Bouteille d’expérience</option>
+                                <option>Boussole</option>
+                                <option>Bow (Arc)</option>
+                                <option>Brique</option>
+                                <option>Briques du Nether</option>
+                            </optgroup>
+
+                            <optgroup label="C">
+                                <option>Cactus</option>
+                                <option>Canne à sucre</option>
+                                <option>Carotte</option>
+                                <option>Carotte dorée</option>
+                                <option>Carte</option>
+                                <option>Carte vide</option>
+                                <option>Casque en cuir</option>
+                                <option>Casque en fer</option>
+                                <option>Casque en or</option>
+                                <option>Casque en diamant</option>
+                                <option>Casque en netherite</option>
+                                <option>Chaîne</option>
+                                <option>Charbon</option>
+                                <option>Charbon de bois</option>
+                                <option>Chaudron</option>
+                                <option>Cisaille</option>
+                                <option>Clé du Nether</option>
+                                <option>Cloche</option>
+                                <option>Coffre</option>
+                                <option>Coffre piégé</option>
+                                <option>Coffre de l’Ender</option>
+                                <option>Commande (bloc de commande)</option>
+                                <option>Compas de récupération</option>
+                                <option>Composteur</option>
+                                <option>Conduit</option>
+                                <option>Corail</option>
+                                <option>Corne de chèvre</option>
+                                <option>Cuir</option>
+                                <option>Cuivre brut</option>
+
+                                </optgroup>
+                                    <optgroup label="D">
+                                    <option>Dalle de pierre</option>
+                                    <option>Dalle de bois</option>
+                                    <option>Diamant</option>
+                                    <option>Disque de musique</option>
+                                    <option>Distributeur</option>
+                                    <option>Dragon tête</option>
+                                    <option>Élytres</option>
+                                </optgroup>
+
+                                <optgroup label="E">
+                                    <option>Émeraude</option>
+                                    <option>Enclume</option>
+                                    <option>Ender perle</option>
+                                    <option>Ender œil</option>
+                                    <option>Éponge</option>
+                                    <option>Éponge humide</option>
+                                    <option>Épée en bois</option>
+                                    <option>Épée en pierre</option>
+                                    <option>Épée en fer</option>
+                                    <option>Épée en or</option>
+                                    <option>Épée en diamant</option>
+                                    <option>Épée en netherite</option>
+                                    <option>Escalier en pierre</option>
+                                    <option>Escalier en bois</option>
+                                </optgroup>
+
+                                <optgroup label="F">
+                                    <option>Farine d’os</option>
+                                    <option>Feu d’artifice</option>
+                                    <option>Feuille</option>
+                                    <option>Fer brut</option>
+                                    <option>Fil</option>
+                                    <option>Flèche</option>
+                                    <option>Fleur</option>
+                                    <option>Four</option>
+                                    <option>Fourneau</option>
+                                    <option>Fumoir</option>
+
+                                </optgroup>
+                                    <optgroup label="G">
+                                    <option>Gâteau</option>
+                                    <option>Graine de blé</option>
+                                    <option>Graine de citrouille</option>
+                                    <option>Graine de pastèque</option>
+                                    <option>Gravier</option>
+                                    <option>Grès</option>
+                                    <option>Grès rouge</option>
+                                    <option>Grelot (cloche)</option>
+                                    <option>Gros coffre</option>
+                                </optgroup>
+
+                                <optgroup label="H">
+                                    <option>Hache en bois</option>
+                                    <option>Hache en pierre</option>
+                                    <option>Hache en fer</option>
+                                    <option>Hache en or</option>
+                                    <option>Hache en diamant</option>
+                                    <option>Hache en netherite</option>
+                                    <option>Haut-fourneau</option>
+                                    <option>Herbe</option>
+                                    <option>Herbe haute</option>
+                                    <option>Houille (charbon)</option>
+                                </optgroup>
+
+                                <optgroup label="I">
+                                    <option>Icône de bannière</option>
+                                    <option>Ingot de cuivre</option>
+                                    <option>Ingot de fer</option>
+                                    <option>Ingot d’or</option>
+                                    <option>Ingot de netherite</option>
+                                    <option>Ink sac (sac d’encre)</option>
+                                </optgroup>
+
+                                <optgroup label="J">
+                                    <option>Jukebox</option>
+                                </optgroup>
+
+                                <optgroup label="K">
+                                    <option>Kelp (algue)</option>
+                                    <option>Kelp séché</option>
+                                </optgroup>
+
+                                <optgroup label="L">
+                                    <option>Lanterne</option>
+                                    <option>Lanterne de l’âme</option>
+                                    <option>Lapis-lazuli</option>
+                                    <option>Laine</option>
+                                    <option>Laine blanche</option>
+                                    <option>Laine noire</option>
+                                    <option>Laine rouge</option>
+                                    <option>Laine bleue</option>
+                                    <option>Laine verte</option>
+                                    <option>Laine jaune</option>
+                                    <option>Laine rose</option>
+                                    <option>Laine violette</option>
+                                    <option>Laine marron</option>
+                                    <option>Laine grise</option>
+                                    <option>Laine gris clair</option>
+                                    <option>Laine cyan</option>
+                                    <option>Laine orange</option>
+                                    <option>Lave</option>
+                                    <option>Lectern (pupitre)</option>
+                                    <option>Lingot de fer</option>
+                                    <option>Lingot d’or</option>
+                                    <option>Lingot de cuivre</option>
+                                    <option>Lingot de netherite</option>
+                                    <option>Livre</option>
+                                    <option>Livre enchanté</option>
+                                    <option>Luciole (frog light)</option>
+                                </optgroup>
+
+                                <optgroup label="M">
+                                    <option>Machine à redstone</option>
+                                    <option>Magmacube (crème de magma)</option>
+                                    <option>Maïs (inexistant – blé)</option>
+                                    <option>Marbre (calcite)</option>
+                                    <option>Mélon</option>
+                                    <option>Mélon scintillant</option>
+                                    <option>Minerai de charbon</option>
+                                    <option>Minerai de cuivre</option>
+                                    <option>Minerai de diamant</option>
+                                    <option>Minerai d’émeraude</option>
+                                    <option>Minerai de fer</option>
+                                    <option>Minerai de lapis-lazuli</option>
+                                    <option>Minerai d’or</option>
+                                    <option>Minerai de redstone</option>
+                                    <option>Montre (horloge)</option>
+                                </optgroup>
+
+                                <optgroup label="N">
+                                    <option>Netherite (lingot)</option>
+                                    <option>Netherite (épée)</option>
+                                    <option>Netherite (hache)</option>
+                                    <option>Netherite (pioche)</option>
+                                    <option>Netherite (bêche)</option>
+                                    <option>Netherite (houe)</option>
+                                    <option>Netherite (armure)</option>
+                                    <option>Netherack</option>
+                                    <option>Note bloc</option>
+                                    <option>Noyau de réapparition</option>
+                                </optgroup>
+
+                                <optgroup label="O">
+                                    <option>Œil de l’Ender</option>
+                                    <option>Os</option>
+                                    <option>Œuf</option>
+                                    <option>Œuf de dragon</option>
+                                    <option>Œuf de tortue</option>
+                                    <option>Obsidienne</option>
+                                    <option>Obsidienne pleureuse</option>
+                                    <option>Outils en bois</option>
+                                    <option>Outils en pierre</option>
+                                    <option>Outils en fer</option>
+                                    <option>Outils en or</option>
+                                    <option>Outils en diamant</option>
+                                    <option>Outils en netherite</option>
+                                </optgroup>
+
+                                <optgroup label="P">
+                                    <option>Pain</option>
+                                    <option>Pastèque</option>
+                                    <option>Pavé</option>
+                                    <option>Perle de l’Ender</option>
+                                    <option>Pierre</option>
+                                    <option>Pierre taillée</option>
+                                    <option>Pioche en bois</option>
+                                    <option>Pioche en pierre</option>
+                                    <option>Pioche en fer</option>
+                                    <option>Pioche en or</option>
+                                    <option>Pioche en diamant</option>
+                                    <option>Pioche en netherite</option>
+                                    <option>Piston</option>
+                                    <option>Piston collant</option>
+                                    <option>Planche de bois</option>
+                                    <option>Plume</option>
+                                    <option>Poisson</option>
+                                    <option>Poisson tropical</option>
+                                    <option>Pomme</option>
+                                    <option>Pomme dorée</option>
+                                    <option>Porte en bois</option>
+                                    <option>Porte en fer</option>
+                                    <option>Poudre à canon</option>
+                                    <option>Poudre de blaze</option>
+                                    <option>Poudre de redstone</option>
+                                    <option>Pupitre</option>
+                                </optgroup>
+
+                                <optgroup label="Q">
+                                    <option>Quartz</option>
+                                    <option>Quartz du Nether</option>
+                                    <option>Quartz lisse</option>
+                                </optgroup>
+
+                                <optgroup label="R">
+                                    <option>Rail</option>
+                                    <option>Rail propulseur</option>
+                                    <option>Rail détecteur</option>
+                                    <option>Rail activateur</option>
+                                    <option>Récupérateur (entonnoir)</option>
+                                    <option>Redstone</option>
+                                    <option>Roche noire</option>
+                                    <option>Roche noire polie</option>
+                                    <option>Rôti de porc</option>
+                                    <option>Rôti de bœuf</option>
+                                    <option>Rôti de mouton</option>
+                                    <option>Rôti de poulet</option>
+                                    <option>Ruche</option>
+                                </optgroup>
+
+                                <optgroup label="S">
+                                    <option>Sable</option>
+                                    <option>Sable rouge</option>
+                                    <option>Sapling (pousse)</option>
+                                    <option>Saumon</option>
+                                    <option>Scute (écaille de tortue)</option>
+                                    <option>Seau</option>
+                                    <option>Seau d’eau</option>
+                                    <option>Seau de lave</option>
+                                    <option>Seau de lait</option>
+                                    <option>Shears (cisaille)</option>
+                                    <option>Shulker box</option>
+                                    <option>Shulker box blanche</option>
+                                    <option>Shulker box noire</option>
+                                    <option>Shulker box rouge</option>
+                                    <option>Shulker box bleue</option>
+                                    <option>Slime (boule)</option>
+                                    <option>Soul sand (sable des âmes)</option>
+                                    <option>Soul soil (terre des âmes)</option>
+                                    <option>Sphère d’expérience</option>
+                                    <option>Sucette de miel (rayon de miel)</option>
+                                </optgroup>
+
+                                <optgroup label="T">
+                                    <option>Table d’enchantement</option>
+                                    <option>Table de craft</option>
+                                    <option>Tonneau</option>
+                                    <option>Torche</option>
+                                    <option>Torche de redstone</option>
+                                    <option>Terre</option>
+                                    <option>Terre labourée</option>
+                                    <option>Tête de creeper</option>
+                                    <option>Tête de squelette</option>
+                                    <option>Tête de zombie</option>
+                                    <option>Tête de joueur</option>
+                                    <option>Trident</option>
+                                    <option>Trappe</option>
+                                </optgroup>
+
+                                <optgroup label="U">
+                                    <option>Uniforme en cuir (armure)</option>
+                                </optgroup>
+
+                                <optgroup label="V">
+                                    <option>Verre</option>
+                                    <option>Verre teinté</option>
+                                    <option>Verrière (vitre)</option>
+                                    <option>Viande avariée</option>
+                                    <option>Viande de bœuf crue</option>
+                                    <option>Viande de porc crue</option>
+                                    <option>Viande de poulet crue</option>
+                                    <option>Viande de mouton crue</option>
+                                </optgroup>
+
+                                <optgroup label="W">
+                                    <option>Wither rose</option>
+                                </optgroup>
+
+                                <optgroup label="X">
+                                    <option>(aucun item)</option>
+                                </optgroup>
+
+                                <optgroup label="Y">
+                                    <option>(aucun item)</option>
+                                </optgroup>
+
+                                <optgroup label="Z">
+                                    <option>Zombifié (tête)</option>
+                                </optgroup>
+
+                        </select><br><br>
+                        <label for="name" >Xp</label>
+                        <input type="number" name="name" value="0"><br><br>
+                        <label for="name">Ender perle</label>
+                        <input type="checkbox" name="name"><br>
+                        <label for="name">Trident</label>
+                        <input type="checkbox" name="name"><br>
+                        <fieldset>
+                            <legend>M'envoyer un mail</legend>
+                            <a href="mailto:hugo.schweizer@bluewin.ch">hugo.schweizer@bluewin.ch</a>
+                            
+
+
+                        </fieldset>
+                    </fieldset>
+
+                </div>
+                
             
                 
             
-            <fieldset class="fieldset">
+            <fieldset class="fieldset" id="payement">
                 <Legend>Payement</Legend>
                 <label for="name">Twint</label>
-                <input type="radio" name="name"><br>
+                <input type="radio" name="name" required><br>
                 <label for="name">liquide 🚿</label>
                 <input type="radio" name="name"><br>
+                <label for="name" >Diamant 💎</label>
+                <input type="radio" name="name" ><br>
                 </fieldset>
                 <label id="Comm" for="name">Commentaires : </label><br>
-                <textarea ></textarea>
+                <textarea >Hugo est le meilleur</textarea>
 
             </div>
             <div class="Generale">
