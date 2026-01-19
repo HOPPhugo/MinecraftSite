@@ -1,0 +1,58 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.title {
+    flex: 1;
+    text-align: center;
+    font-size: 50px;
+}
+.cindé {
+    display: flex;
+    flex-direction: row;
+    flex: 4;}
+.Right {
+    border-radius: 50px;
+    flex: 1;
+    text-align: center;
+    background-color: #BEEFFF;
+    color: #102A43;
+}
+.Left {
+    flex: 6;
+    text-align: center;
+    background-image: url(./../Images/Zombie.jpg);
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.Stray {
+    flex: 6;
+    text-align: center;
+    background-image: url(./../Images/stray.avif);
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.Squelette {
+    flex: 6;
+    text-align: center;
+    background-image: url(./../Images/squeletteGramd.webp);
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+#Retour {
+    font-size: 50px;
+    color: #102A43;
+}
+
+.Retour {
+    background-color: #BEEFFF;
+    width: 50%;
+    margin: 10px auto;    
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;   
+}
