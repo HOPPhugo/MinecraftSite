@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <a><link rel="stylesheet" href="MiseEnFormeEveryWere.css"></a>
+        <a><link rel="stylesheet" href="./../css/MiseEnFormeEveryWere.css"></a>
         <title>Contact</title>
         <style>
         input{
             border-style:dotted;
             
+        }
+        .fieldset {
+            width: fit-content;
+            height: fit-content;
+        }
+        .Commande {
+            display: flex;
+            flex-direction: row;
+        }
+        textarea {
+            height: 100%;
+            margin-left: 5px;
+            max-height: 326px;
+        }
+        #Comm {
+            margin-left: 10px;
+        }
+        input, textarea, option, select {
+            background-color: #BEEFFF;
+            color: #102A43;
         }
 
         </style>
@@ -16,42 +36,57 @@
             Contactez-nous ! 📞
         </h1>
         <form action="Submit succed.html" >
-            <label for="name">Nom : </label>
-            <input type="text" id="name" name="name" required><br><br>
-            <label for="name">Prénom : </label>
-            <input type="text" id="name" name="name" required><br><br>
-            <label for="name">Adresse : </label>
-            <input type="text" id="name" name="name" required><br><br>
-            <label for="name">Lieu : </label>
-            <input type="text" id="name" name="name" required><br><br>
-            <label for="name">NPA : </label>
-            <input type="number" id="name" name="name" required><br><br>
-            <label for="name">Cookies</label>
-            <input type="checkbox" name="name"><br>
-            <label for="name">Bout de mont everest</label>
-            <input type="checkbox" name="name"><br>
-            <label for="name">Cheveux de arthure himbert</label>
-            <input type="checkbox" name="name"><br>
-            <label for="name">2eme cookie</label>
-            <input type="checkbox" name="name"><br>
-            <label for="name">Nombre de cookies</label>
-            <select name="Nombre de cookie">
+            <div class="Commande">
+                <fieldset class="fieldset">
+                <legend>Que voulez vous acheter ?</legend>
+                <label for="name">Nom : </label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="name">Prénom : </label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="name">Adresse : </label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="name">Lieu : </label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="name">NPA : </label>
+                <input type="number" id="name" name="name" required><br><br>
+                <label for="name">Cookies</label>
+                <input type="checkbox" name="name"><br>
+                <label for="name">Bout de mont everest</label>
+                <input type="checkbox" name="name"><br>
+                <label for="name">Cheveux de arthure himbert</label>
+                <input type="checkbox" name="name"><br>
+                <label for="name">2eme cookie</label>
+                <input type="checkbox" name="name"><br>
+                <label for="name">Nombre de cookies</label>
+                <select name="Nombre de cookie">
 
-                <option>--Aucun--</option>
-                <option>1 </option>
-                <option>2</option>
-                <option>10</option>
+                    <option>--Aucun--</option>
+                    <option>1 </option>
+                    <option>2</option>
+                    <option>10</option>
 
-            </select><br>
-            <label for="name">Twint</label>
-            <input type="radio" name="name"><br>
-            <label for="name">liquide 🚿</label>
-            <input type="radio" name="name"><br>
-            <label for="name">Commentaires : </label>
-            <textarea ></textarea>
-            <label for="name">Conditions générales : </label>
-            <input type="checkbox" name="name" required><br>
-            <input type="submit" value="envoyer">
+                </select><br>
+            </fieldset>
+            
+                
+            
+            <fieldset class="fieldset">
+                <Legend>Payement</Legend>
+                <label for="name">Twint</label>
+                <input type="radio" name="name"><br>
+                <label for="name">liquide 🚿</label>
+                <input type="radio" name="name"><br>
+                </fieldset>
+                <label id="Comm" for="name">Commentaires : </label><br>
+                <textarea ></textarea>
+
+            </div>
+            <div class="Generale">
+                <label for="name">Conditions générales : </label>
+                <input type="checkbox" name="name" required><br>
+                <input type="submit" value="envoyer">
+            </div>
+            
         </form>
     </body>
 </html>

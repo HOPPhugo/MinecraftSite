@@ -8,10 +8,19 @@
         <meta name="description" content="Page d'accueil pour le premier exercice html">
         <style>
             body{
-                
+                width: 100%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                background-color: transparent;
+            }
+            html {
+                
+                background-image: url("./../Images/wp2890582-minecraft-background-free.png");
+                background-repeat:no-repeat;
+                background-size:cover;
+                background-attachment: fixed;
+                background-color:#835432 ;
             }
             .leftSide{
                 display: flex;
@@ -84,7 +93,7 @@
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
-                width: fit-content;
+                margin-left: 20px;
             }
             #Diamant, #Fer, #Netherit, #Charbon {
                 width: 15%;
@@ -95,17 +104,14 @@
             }
             #Netherit {
                 width: 15%;
+
             }
-            .AllOres {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                
+            #OresTitle {
+                text-align: center;
             }
         </style>
     </head>
     <body>
-        <div class="middleSide">
             <h1 id="Titre">
                 ✨Page d'accueil✨
             </h1>
@@ -160,8 +166,7 @@
                     </li>
                 </ul>
             </div>
-            
-            <h2>&nbsp;⛏ Minecraft Ores top 4 ⛏</h3>
+            <h2 id="OresTitle">&nbsp;⛏ Minecraft Ores top 4 ⛏</h3>
            
                 <div class="AllOres">
                     <div class="Row1">
@@ -170,7 +175,7 @@
                             Diamant
                         </p>
                         <img id="Diamant" src="./../Images/pngegg.png">
-                        <p>
+                        <p id="IronTxt">
                             Fer
                         </p>
                         <img id="Fer" src="./../Images/0893944aba45ab7279c850c0dff1dcbc.png">
