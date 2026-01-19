@@ -6,9 +6,33 @@
 body {
     font-family:MaPolicePersos;
     width: 100%;
+    background-image: url("./../Images/wp2890582-minecraft-background-free.png");
+    background-repeat:no-repeat;
+    
 }
 html{
     width: 100%;
     color: #BEEFFF;
-    background-color: #102A43;
+    background-color:#835432;
+}
+.card {
+width: 300px;
+height: 300px;
+background-color: #BEEFFF;
+display: flex;
+flex-direction: column;
+
+}
+.card-header {
+background-color: red;
+
+}
+.card-body {
+background-color: green ;
+flex: 1;
+
+}
+.card-footer {
+background-color: yellow;
+
 }

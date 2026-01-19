@@ -7,7 +7,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Page d'accueil pour le premier exercice html">
         <style>
-            .middleSide{
+            body{
+                
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -61,7 +62,46 @@
                 flex-direction: row;
                 justify-content: center;
             }
-            
+            #Squelette {
+                width: 10%;
+            }
+            #Araignée {
+                width: 20%;
+            }
+            #Creeper {
+                width: 20%;
+            }
+            #drowned {
+                width: 40%;
+            }
+            #Illager {
+                width: 40%;
+            }
+            #Uglin {
+                width: 15%;
+            }
+            .Row1, .Row2 {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                width: fit-content;
+            }
+            #Diamant, #Fer, #Netherit, #Charbon {
+                width: 15%;
+                height: 15%;
+            }
+            #Diamant {
+                width: 10%;
+            }
+            #Netherit {
+                width: 15%;
+            }
+            .AllOres {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                
+            }
         </style>
     </head>
     <body>
@@ -80,9 +120,10 @@
                 <ul>
                     <li>
                         Zombie
-                        <img id="Zombie" src="./../Images/zombie.jpg">
+                        <img id="Zombie" src="./../Images/zombie.png">
                     
                     </li>
+                    <br>
                     <li>
                         Squelette
                         <img id="Squelette" src="./../Images/squelette.webp">
@@ -99,18 +140,18 @@
                         
                     </li>
                     <li>
-                        <img id="drowned" src="./../Images/drowned.jpeg">
                         Zombies Noyés
+                        <img id="drowned" src="./../Images/drowned.png">
                         
                     </li>
                     <li>
                         Illagers
-                        <img id="Illager" src="./../Images/Illager.jpg">
+                        <img id="Illager" src="./../Images/Illager.png">
                         
                     </li>
                     <li>
                         Uglin
-                        <img id="Uglin" src="./../Images/Uglin.webp">
+                        <img id="Uglin" src="./../Images/Uglin.png">
                         
                     </li>
                     <li>
@@ -121,28 +162,30 @@
             </div>
             
             <h2>&nbsp;⛏ Minecraft Ores top 4 ⛏</h3>
-            <p>
-                coucou je suis un autre paragraphe aussi inintéréssent que les autres et en plus avec des fautes d'orthographes
-            </p>
-            <ul>
-                <div class="Images2">
-                    <li class="p1">
-                        element 1
-                    </li>
-                    <img class="image2" src="./../Images/OIP (1).webp">
-                    <li class="p1">
-                        element 2
-                    </li>
-                    <img class="image2" src="./../Images/OIP.webp">
+           
+                <div class="AllOres">
+                    <div class="Row1">
+
+                        <p>
+                            Diamant
+                        </p>
+                        <img id="Diamant" src="./../Images/pngegg.png">
+                        <p>
+                            Fer
+                        </p>
+                        <img id="Fer" src="./../Images/0893944aba45ab7279c850c0dff1dcbc.png">
+                    </div>
+                    <div class="Row2">
+                        <p>Netherit</p> 
+                        <img id="Netherit" src="./../Images/276667dccdd8e42.png">
+                        <p>
+                            Charbon
+                        </p>
+                        <img id="Charbon" src="./../Images/637072293207114106.png" >
+
+                    </div>
+
                 </div>
-                
-                <li>
-                    element 3
-                </li>
-                <li>
-                    element 4
-                </li>
-            </ul>
         </div>
         
     </body>
