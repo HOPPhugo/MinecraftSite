@@ -43,6 +43,46 @@ body{
     background-repeat: no-repeat;
     background-size:cover;
 }
+.Creeper {
+    flex: 6;
+    text-align: center;
+    background-image: url(./../Images/creeper-56a61d105f9b58b7d0dffd67.png);
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.CreeperCharger {
+    flex: 6;
+    text-align: center;
+    background-image: url(./../Images/creeperCharger.jpg);
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.Drowned {
+    flex: 6;
+    text-align: center;
+    background-image: url(./../Images/drowned.png);
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.Piglin {
+    flex: 6;
+    text-align: center;
+    background-image: url(./../Images/piglin.jpg);
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.Hoglins {
+    flex: 6;
+    text-align: center;
+    background-image: url(./../Images/hoglins.jpeg);
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
 #Retour {
     font-size: 50px;
     color: #102A43;
