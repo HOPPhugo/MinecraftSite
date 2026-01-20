@@ -83,6 +83,38 @@ body{
     background-repeat: no-repeat;
     background-size:cover;
 }
+.Diamant {
+    flex: 6;
+    text-align: center;
+    background-image: url(./../Images/image.webp);
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.Fer {
+    flex: 6;
+    text-align: center;
+    background-image: url(./../Images/fer.webp);
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.Netherite {
+    flex: 6;
+    text-align: center;
+    background-image: url(./../Images/Netherite.avif);
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.Charbon {
+    flex: 6;
+    text-align: center;
+    background-image: url(./../Images/coal.jpg);
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
 #Retour {
     font-size: 50px;
     color: #102A43;
