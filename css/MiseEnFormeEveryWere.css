@@ -18,3 +18,10 @@ a:hover {
 #Retour:hover {
     color: green;
 }
+input, textarea, option, select {
+    background-color: #BEEFFF;
+    color: #102A43;
+}
+select:hover{
+    color: green;
+}
