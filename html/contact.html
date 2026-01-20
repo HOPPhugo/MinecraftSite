@@ -9,6 +9,9 @@
             border-style:dotted;
             
         }
+        h1 {
+            margin: 0;
+        }
         .fieldset {
             width: fit-content;
             height: fit-content;
@@ -20,7 +23,7 @@
         textarea {
             height: 100%;
             margin-left: 5px;
-            max-height: 326px;
+            max-height: 398px;
             margin-top: 5px;
         }
         #Comm {
@@ -42,15 +45,29 @@
         #Discord {
             margin-right: 24px;
         }
+        #Choose {
+            padding-right: 21px;
+        }
+        header{
+            display: flex;
+            flex-direction: row;
+        }
+        .Retour {
+            margin-top: 15px;
+            
+        }
         </style>
     </head>
     <body>
-        <div class="Retour">
-            <a id="Retour" href="mon-premier-site.html">Retour</a>
-        </div>
-        <h1>
-            Contactez-nous ! 📞
-        </h1>
+        <header>
+            <h1>
+                Contactez-nous ! 📞
+            </h1>
+            <div class="Retour">
+                <a id="Retour" href="mon-premier-site.html">Retour</a>
+            </div>
+
+        </header>
         <form action="Submit succed.html" >
             <div class="Commande">
                 <div class="AddresseCommande">
@@ -67,7 +84,7 @@
 
 
                     </fieldset>
-                    <fieldset class="fieldset">
+                    <fieldset class="fieldset" id="Choose">
                         <legend>Que voulez vous acheter ?</legend>
                         <label for="name">Item</label>
                         <select name="Nombre de cookie">
