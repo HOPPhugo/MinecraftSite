@@ -19,14 +19,17 @@
             header{
                 display: flex;
                 flex-direction: row;
+                height: 15%;
             }
             #titre {
                 margin-top: 0;
                 padding: 20px;
                 text-align: center;
                 width: fit-content;
-                margin-left: 34%;
-                margin-right: 19%;
+                position: absolute;
+                display: flex;
+                margin-left: 50%;
+                transform: translateX(-50%);
                 background-color: #BEEFFF;
                 color: #102A43;
                 height: fit-content;
@@ -39,9 +42,20 @@
                 padding-left: 35px;
                 padding-right: 20px;
                 padding-bottom: 35px;
-                width: fit-content;
                 margin-left: auto;
+                width: 10%;
+                height: 70%;
                 border-bottom-left-radius: 100px;
+            }
+            .ListLiens:hover{
+                transition: width 0.75s ease, height 0.75s ease, font-size 0.75s ease;
+                width: 15%;
+                height: 76%;
+                font-size: 20px;
+            }
+            .ListLiens:not(:hover){
+                transition: ease-in;
+                transition-duration: 0.75s;
             }
             .titreLiens {
                 text-align: center;
@@ -58,9 +72,17 @@
                 background-color: #BEEFFF;
                 display: flex;
                 flex-direction: column;
-                width: 25%;
+                width: 15%;
                 padding: 20px;
                 border-radius: 30px;
+            }
+            .Mobs:hover {
+                width: 25%;
+                transition: width 0.75s ease, height 0.75s ease;
+            }
+            .Mobs:not(:hover) {
+                transition: ease-in;
+                transition-duration: 1s;
             }
             .Row1, .Row2, .Row3, .Row4 {
                 display: flex;
