@@ -128,3 +128,24 @@ body{
     border-radius: 10px;
     text-align: center;   
 }
+@media (max-width:778px) {
+    .Left, .Creeper, .Charbon, .CreeperCharger, .Diamant, .Fer, .Drowned, .Hoglins, .Netherite, .Piglin, .Squelette, .Stray {
+        flex: 1;
+        background-position: center;
+    }
+    .Right {
+        font-size: 10px;
+        padding: 20px; 
+        
+    }
+    .cindé {
+        flex: 0;
+    }
+    .title {
+        font-size: 20px;
+        flex: 0;
+    }
+    body {
+        display: block;
+    }
+}

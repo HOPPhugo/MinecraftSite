@@ -4,9 +4,12 @@
         <title>INDEX COMME SUR TOUT LES SITES</title>
         <a><link rel="stylesheet" href="./../css/MiseEnFormeEveryWere.css"></a>
         <a><link rel="stylesheet" href="./../css/returnButton.css"></a>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Page d'accueil pour le premier exercice html">
         <style>
             html, body{
                 height: 100%;
+                margin: 0;
             }
             main{
                 height: 100%;
@@ -41,7 +44,6 @@
             .footer {
                 display: flex;
                 flex-direction: row;
-                max-width: 50%;
                 background-color: #BEEFFF;
                 color: #102A43;
                 border-radius: 12px;
@@ -67,6 +69,7 @@
                 align-items: center;
                 padding-bottom: 20px;
                 padding-top: 20px;
+                height: auto;
             }
             #title {
                 position: absolute;
@@ -74,17 +77,40 @@
                 margin-left: 50%;
                 transform: translateX(-50%);
             }
+            @media (max-width: 860px) {
+                #title {
+                    font-size: 20px;
+                }
+                table {
+                    font-size: 10px;
+                }
+                .footer {
+                    font-size: 15px;
+                }
+            }
+            @media (max-width:490px){
+                            .footer {
+                    font-size: 10px;
+                }
+                table {
+                    margin-top: 20px;
+                }
+                #title {
+                    margin-top: 30px;
+                    font-size: 15px;
+                }
+            }
         </style>
     </head>
     <body>
         <header>
-            <h1 id="title">Top 3 des joueurs <mark>Minecraft</mark> les plus connus :</h1>
+            <h1 id="title">Top 3 des joueurs  Minecraft les plus connus :</h1>
             <div class="Retour">
                 <a id="Retour" href="mon-premier-site.html">Retour</a>
             </div>
 
         </header>
-        <Main>
+        <main>
             <table>
                 <tr>
                     <td>
@@ -145,22 +171,22 @@
             </table>
             
 
-        </Main>
-    </body>
-    <footer>
-        
-        <div class="footer">
+        </main>
+        <footer>
             
-            <div class="TextFooter">
-                <p><sup>1</sup><strong>Speedrun</strong> : Le Speedrun est le but de finir le jeu ou de faire une chause spécifique le plus raoidement possible, <br>le but/objectif varie selon la catégorie choisie.Certaines catégories demandes de finir le jeu le plus rapidement <br>possible et certaines plus niche demandes de récupérer un certain bloc/item.</p>
-                <p><sup>2</sup><strong>Manhunt</strong> : Un Manhunt est une variante du speedrun de Minecraft. Plutôt que d’essayer de battre le chronomètre, les joueurs deviennent soit coureurs, soit chasseurs ; Les coureurs doivent survivre et battre le jeu tandis qu’un nombre variable de chasseurs traquent le coureur et tentent de le tuer. La première vidéo connue de Minecraft Manhunt s’intitule « Minecraft Manhunt #1 », publiée par la chaîne YouTube Dastro le 26 septembre 2014. [1] Depuis, des créateurs de contenu comme Dream ont fait exploser et popularisé cette idée. Il existe d’autres variantes de ce type : plusieurs joueurs poursuivant le coureur, des objets tombés au hasard, etc. Cette page vous donnera quelques conseils sur la façon de préparer la chasse à l’homme, comment survivre en tant que coureur, et comment tuer le coureur en tant que chasseur.</p>
-                <p><sup>3</sup><strong>PvP</strong> : Le PvP est un acronyme de l’expression anglaise « Player versus Player ». Si vous connectez toutes vos connaissances de 6eme, vous comprendrez que cela signifie « joueur contre joueur » c’est-à-dire lorsque le joueur lutte contre d’autres joueurs.</p>
-                <p><sup>4</sup><strong>SMP</strong> : ça veux dire "Survival multiplayer" qui donne en français : survie multiplayer, donc c'est une survie pouvant regrouper plusieurs personne</p>
+            <div class="footer">
+                
+                <div class="TextFooter">
+                    <p><sup>1</sup><strong>Speedrun</strong> : Le Speedrun est le but de finir le jeu ou de faire une chause spécifique le plus raoidement possible, <br>le but/objectif varie selon la catégorie choisie.Certaines catégories demandes de finir le jeu le plus rapidement <br>possible et certaines plus niche demandes de récupérer un certain bloc/item.</p>
+                    <p><sup>2</sup><strong>Manhunt</strong> : Un Manhunt est une variante du speedrun de Minecraft. Plutôt que d’essayer de battre le chronomètre, les joueurs deviennent soit coureurs, soit chasseurs ; Les coureurs doivent survivre et battre le jeu tandis qu’un nombre variable de chasseurs traquent le coureur et tentent de le tuer. La première vidéo connue de Minecraft Manhunt s’intitule « Minecraft Manhunt #1 », publiée par la chaîne YouTube Dastro le 26 septembre 2014. [1] Depuis, des créateurs de contenu comme Dream ont fait exploser et popularisé cette idée. Il existe d’autres variantes de ce type : plusieurs joueurs poursuivant le coureur, des objets tombés au hasard, etc. Cette page vous donnera quelques conseils sur la façon de préparer la chasse à l’homme, comment survivre en tant que coureur, et comment tuer le coureur en tant que chasseur.</p>
+                    <p><sup>3</sup><strong>PvP</strong> : Le PvP est un acronyme de l’expression anglaise « Player versus Player ». Si vous connectez toutes vos connaissances de 6eme, vous comprendrez que cela signifie « joueur contre joueur » c’est-à-dire lorsque le joueur lutte contre d’autres joueurs.</p>
+                    <p><sup>4</sup><strong>SMP</strong> : ça veux dire "Survival multiplayer" qui donne en français : survie multiplayer, donc c'est une survie pouvant regrouper plusieurs personne</p>
+                </div>
+                
+                
             </div>
             
-            
-        </div>
-        
-
-    </footer>
+    
+        </footer>
+    </body>
 </html>

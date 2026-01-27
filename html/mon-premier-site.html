@@ -43,14 +43,14 @@
                 padding-right: 20px;
                 padding-bottom: 35px;
                 margin-left: auto;
-                width: 10%;
-                height: 70%;
+                width: 200px;
+                height: 150px;
                 border-bottom-left-radius: 100px;
             }
             .ListLiens:hover{
                 transition: width 0.75s ease, height 0.75s ease, font-size 0.75s ease;
-                width: 15%;
-                height: 76%;
+                width: 300px;
+                height: 300;
                 font-size: 20px;
             }
             .ListLiens:not(:hover){
@@ -68,16 +68,17 @@
                 color: #102A43;
             }
             .Mobs {
+                display: flex;
+                flex-wrap: wrap;
                 font-size: 30px;
                 background-color: #BEEFFF;
-                display: flex;
                 flex-direction: column;
-                width: 15%;
+                width: 400px;
                 padding: 20px;
                 border-radius: 30px;
             }
             .Mobs:hover {
-                width: 25%;
+                width: 500px;
                 transition: width 0.75s ease, height 0.75s ease;
             }
             .Mobs:not(:hover) {
@@ -86,12 +87,48 @@
             }
             .Row1, .Row2, .Row3, .Row4 {
                 display: flex;
+                flex-wrap: wrap;
                 justify-content: space-between;
             }
             .Link {
                 border-top: solid;
                 border-color: #102A43;
                 text-align: center;
+            }
+            @media (max-width: 1052px) {
+                .ListLiens {
+                    width: 100px;
+                    height: 250px;
+                    
+                }.ListLiens:hover {
+                    width: 100px;
+                    height: 250px;
+                    font-size: 16px;
+                }
+            }
+
+            @media (max-width: 740px) {
+                .Mobs {
+                    width: 100px;
+                    font-size: 20px;
+                }
+                #titre {
+                    font-size: 20px;
+                }
+                .titres {
+                    width: 100px;
+                }
+            }@media (max-width: 634px) {
+                .ListLiens {
+                    margin-top: 320px;
+                    border-radius: 20px;
+                    padding: 10px;
+
+                }
+                .Mobs:hover {
+                    width: 100px;
+                    font-size: 20px;
+                }
             }
         </style>
 
@@ -114,7 +151,7 @@
 
     <body>
         <div class="body">
-            <h2>⚠️ List de mobs méchants ⚠️ :</h2>
+            <h2 class="titres">⚠️ List de mobs méchants ⚠️ :</h2>
             <div class="Mobs">
                 <div class="Row1">
                     <a href="Zombie.html">Zombie</a>
@@ -143,7 +180,7 @@
             </div>
                 
 
-            <h2>⛏️ Top 4 Minerais ⛏️ :</h2>
+            <h2 class="titres">⛏️ Top 4 Minerais ⛏️ :</h2>
             <div class="Mobs">
                 <div class="Row1">
                     <a href="Diamant.html">Diamant</a>
